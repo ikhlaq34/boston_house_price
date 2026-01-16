@@ -39,6 +39,7 @@ PTRATIO	Pupil-teacher ratio by town
 B	1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
 LSTAT	% lower status of the population
 MEDV	Median value of owner-occupied homes (target, in $1000s)
+
 3️⃣ Project Workflow
 
 Load dataset from Excel
@@ -62,12 +63,14 @@ Metric	Value
 RMSE	4.93 (± $4,930)
 R² Score	0.669
 Predicted Price (Example)	$28,617
+
 5️⃣ Feature Importance
 Feature	Coefficient	Interpretation
 RM	+5.12	More rooms → higher price
 LSTAT	-4.25	Higher lower-status % → lower price
 CRIM	-2.80	Higher crime → lower price
 ...	...	...
+
 6️⃣ Key Learnings
 
 Multivariable regression handles many features simultaneously
@@ -96,6 +99,8 @@ pandas	Data handling
 numpy	Numerical operations
 scikit-learn	Linear Regression, evaluation, train/test split
 matplotlib / seaborn	Optional visualization
+
+
 9️⃣ GitHub Project Structure
 boston_house_price/
 │
